@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-size: 20px;
+}
+
+.heromain {
+  width: 100%;
+  background-size: cover;
+}
+
+.heromain .herotextbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  padding: 13%;
+  color: white;
+}
+
+.heromain .herotextbox h1, .heromain .herotextbox h2, .heromain .herotextbox p {
+  width: 45%;
+  text-align: center;
+}
+
+.content1 {
+  width: 100%;
+  padding: 5vw;
+}
+
+.content1 .content1flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.content1 .content1flex .flexchild {
+  width: 12rem;
+}
+
+.content1 .content1flex h3 {
+  font-size: 32px;
+}
+
+.content1 .content1flex p {
+  font-size: 16px;
+}
+
+.content1 .icons {
+  width: 5rem;
+}
+
+@media screen and (max-width: 576px) {
+  .content1flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+}
+/*# sourceMappingURL=style.css.map */

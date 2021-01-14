@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 20px;
+}
+
+.heromain {
+    width: 100%;
+    background-size: cover;
+    
+    .herotextbox {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    position: relative;
+    padding: 13%;
+    color: white;
+    h1, h2, p {
+        width: 45%;
+        text-align: center;
+    }
+    }
+}
+
+.content1 {
+    width: 100%;
+    padding: 5vw;
+    .content1flex {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        .flexchild {
+            width: 12rem;
+        }
+        h3 {
+            font-size: 32px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    .icons {
+        width: 5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .content1flex {
+        flex-flow: column nowrap;
+    }
+}
