@@ -13,7 +13,8 @@ html, body {
 
 .heromain {
   width: 100%;
-  background-image: url(img/Depositphotos_3477954_xl-2015.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.32)), to(rgba(0, 0, 0, 0.32))), url(img/depositphotos-347795-Xfo2R.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url(img/depositphotos-347795-Xfo2R.jpg);
   background-size: cover;
 }
 
@@ -53,16 +54,18 @@ html, body {
       -ms-flex-align: start;
           align-items: flex-start;
   position: relative;
-  padding: 13%;
+  padding: 11%;
   color: white;
+  text-shadow: 0 0 10px black;
 }
 
 .heromain .herotextbox h1 {
   font-weight: 700;
+  font-size: 3.2rem;
 }
 
 .heromain .herotextbox h2 {
-  font-weight: 500;
+  font-weight: 600;
   width: 75% !important;
 }
 
@@ -74,6 +77,35 @@ html, body {
   width: 65%;
   min-width: 25rem;
   text-align: left;
+}
+
+.heromain .herotextbox .flexbuttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.heromain .herotextbox .buttons {
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 8px 24px 8px 24px;
+  text-shadow: none;
+}
+
+.heromain .herotextbox .btn-1:hover,
+.heromain .herotextbox .btn-1:active,
+.heromain .herotextbox .btn-2:hover,
+.heromain .herotextbox .btn-2:active {
+  background-color: #e0e0e0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.heromain .herotextbox .btn-2 {
+  margin-left: 20px;
 }
 
 .content1 {
@@ -139,6 +171,55 @@ html, body {
           animation-duration: 0.75s;
   -webkit-animation-delay: 0.55s;
           animation-delay: 0.55s;
+}
+
+.content2 {
+  width: 100%;
+  padding: 5vw;
+}
+
+.content2 .content2description {
+  width: 45%;
+  background-color: #e9e7e7;
+  padding: 20px;
+}
+
+.content2 h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.content2 ul li {
+  font-size: 16px;
+  font-weight: 400;
+  list-style: none;
+  border-bottom: 1px solid black;
+  width: 25%;
+}
+
+.content2 p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.content2 .content2flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.content2 .creditcard {
+  width: 38%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-width: 25rem;
 }
 
 @media screen and (max-width: 576px) {
