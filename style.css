@@ -8,10 +8,12 @@
 html, body {
   font-size: 20px;
   overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .heromain {
   width: 100%;
+  background-image: url(img/Depositphotos_3477954_xl-2015.jpg);
   background-size: cover;
 }
 
@@ -37,7 +39,6 @@ html, body {
   position: relative;
   right: 12.5%;
   top: 4vw;
-  display: none;
 }
 
 .heromain .herotextbox {
@@ -53,7 +54,20 @@ html, body {
           align-items: flex-start;
   position: relative;
   padding: 13%;
-  color: black;
+  color: white;
+}
+
+.heromain .herotextbox h1 {
+  font-weight: 700;
+}
+
+.heromain .herotextbox h2 {
+  font-weight: 500;
+  width: 75% !important;
+}
+
+.heromain .herotextbox p {
+  font-weight: 400;
 }
 
 .heromain .herotextbox h1, .heromain .herotextbox h2, .heromain .herotextbox p {
@@ -85,11 +99,13 @@ html, body {
 }
 
 .content1 .content1flex h3 {
-  font-size: 32px;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .content1 .content1flex p {
   font-size: 16px;
+  font-weight: 400;
 }
 
 .content1 .icons {
@@ -142,5 +158,13 @@ html, body {
   .content1flex .flexchild {
     margin-bottom: 2rem;
   }
+}
+
+.navbar {
+  max-height: 51px;
+}
+
+.nav-link {
+  font-size: 16px !important;
 }
 /*# sourceMappingURL=style.css.map */
