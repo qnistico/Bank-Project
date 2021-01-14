@@ -156,13 +156,43 @@ html, body {
 }
 
 @media screen and (max-width: 576px) {
+    .heroflex {
+        flex-flow: column nowrap !important;
+        align-items: center;
+    }
     .herotextbox {
         h1, h2, p {
             width: 100% !important;
             text-align: left !important;
+            min-width: unset !important;
+            position: relative;
+            top: -5vw;
+        }
+        h1 {
+            font-size: 18vw !important;
+        }
+        h2 {
+            font-size: 11vw !important;
         }
     }
+.mobilebank {
+    display: none;
+}
+.content2flex {
+    flex-flow: column nowrap !important;
+    align-items: center;
+}
+.content2description {
+    width: 100% !important;
+    ul li {
+        width: 55%;
+    }
+}
 
+
+.creditcard {
+    min-width: unset !important;
+}
     .content1 {
         padding: 3rem 0 0 0;
     }

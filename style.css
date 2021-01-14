@@ -223,9 +223,48 @@ html, body {
 }
 
 @media screen and (max-width: 576px) {
+  .heroflex {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-flow: column nowrap !important;
+            flex-flow: column nowrap !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .herotextbox h1, .herotextbox h2, .herotextbox p {
     width: 100% !important;
     text-align: left !important;
+    min-width: unset !important;
+    position: relative;
+    top: -5vw;
+  }
+  .herotextbox h1 {
+    font-size: 18vw !important;
+  }
+  .herotextbox h2 {
+    font-size: 11vw !important;
+  }
+  .mobilebank {
+    display: none;
+  }
+  .content2flex {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-flow: column nowrap !important;
+            flex-flow: column nowrap !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .content2description {
+    width: 100% !important;
+  }
+  .content2description ul li {
+    width: 55%;
+  }
+  .creditcard {
+    min-width: unset !important;
   }
   .content1 {
     padding: 3rem 0 0 0;
