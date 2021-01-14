@@ -7,12 +7,37 @@
 
 html, body {
   font-size: 20px;
+  overflow-x: hidden;
 }
 
 .heromain {
   width: 100%;
-  background-color: gray;
   background-size: cover;
+}
+
+.heromain .heroflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.heromain .mobilebank {
+  max-height: 75vh;
+  width: 55%;
+  min-width: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  right: 12.5%;
+  top: 4vw;
+  display: none;
 }
 
 .heromain .herotextbox {
@@ -28,12 +53,13 @@ html, body {
           align-items: flex-start;
   position: relative;
   padding: 13%;
-  color: white;
+  color: black;
 }
 
 .heromain .herotextbox h1, .heromain .herotextbox h2, .heromain .herotextbox p {
-  width: 45%;
-  text-align: center;
+  width: 65%;
+  min-width: 25rem;
+  text-align: left;
 }
 
 .content1 {
@@ -68,6 +94,35 @@ html, body {
 
 .content1 .icons {
   width: 5rem;
+  margin-bottom: 12px;
+}
+
+.content1 .flexchild1 {
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.content1 .flexchild2 {
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.content1 .flexchild3 {
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.content1 .flexchild4 {
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-delay: 0.55s;
+          animation-delay: 0.55s;
 }
 
 @media screen and (max-width: 576px) {
@@ -83,6 +138,9 @@ html, body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .content1flex .flexchild {
+    margin-bottom: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
