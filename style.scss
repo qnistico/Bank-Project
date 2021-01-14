@@ -111,14 +111,14 @@ html, body {
         align-items: center;
         .flexchild {
             margin-bottom: 2rem;
+            width: 90% !important;
+            text-align: center;
         }
         h3 {
-            font-weight: 900 !important;
-            font-size: 28px !important;
+            font-weight: 700 !important;
         }
         p {
-            font-weight: 600 !important;
-            font-size: 20px !important;
+            font-weight: 500 !important;
         }
     }
 }
