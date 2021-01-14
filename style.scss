@@ -10,6 +10,7 @@ html, body {
 
 .heromain {
     width: 100%;
+    background-color: gray;
     background-size: cover;
     
     .herotextbox {
@@ -49,7 +50,14 @@ html, body {
 }
 
 @media screen and (max-width: 576px) {
+    .herotextbox {
+        h1, h2, p {
+            width: 100% !important;
+            text-align: left !important;
+        }
+    }
     .content1flex {
-        flex-flow: column nowrap;
+        flex-flow: column nowrap !important;
+        align-items: center;
     }
 }
