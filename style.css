@@ -13,9 +13,10 @@ html, body {
 
 .heromain {
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.32)), to(rgba(0, 0, 0, 0.32))), url(img/depositphotos-347795-Xfo2R.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url(img/depositphotos-347795-Xfo2R.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.32)), to(rgba(0, 0, 0, 0.32))), url(img/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url(img/hero.jpg);
   background-size: cover;
+  background-position: center center;
 }
 
 .heromain .heroflex {
@@ -38,8 +39,8 @@ html, body {
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
-  right: 12.5%;
-  top: 4vw;
+  right: 13%;
+  top: 7.5vw;
 }
 
 .heromain .herotextbox {
@@ -54,7 +55,7 @@ html, body {
       -ms-flex-align: start;
           align-items: flex-start;
   position: relative;
-  padding: 11%;
+  padding: 14%;
   color: white;
   text-shadow: 0 0 10px black;
 }
@@ -87,7 +88,7 @@ html, body {
 }
 
 .heromain .herotextbox .buttons {
-  background-color: white;
+  background-color: #53b17a;
   color: black;
   font-weight: 500;
   border-radius: 5px;
@@ -180,7 +181,7 @@ html, body {
 
 .content2 .content2description {
   width: 45%;
-  background-color: #e9e7e7;
+  background-color: #ceecd7;
   padding: 20px;
 }
 
@@ -220,6 +221,54 @@ html, body {
   -o-object-fit: cover;
      object-fit: cover;
   min-width: 25rem;
+}
+
+.graph1 {
+  width: 100%;
+  padding: 5vw;
+}
+
+.graph1 .graphflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.graph1 table {
+  width: 90%;
+}
+
+.graph1 .thead {
+  background-color: #53b17a;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.graph1 td {
+  font-weight: 500;
+  text-align: center;
+}
+
+.graph1 th {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.graph1 .check1 {
+  width: 5%;
+  min-width: 2rem;
+}
+
+.graph1 .bggray {
+  background-color: #e0e0e0;
 }
 
 @media screen and (max-width: 576px) {
@@ -292,10 +341,22 @@ html, body {
 }
 
 .navbar {
-  max-height: 51px;
+  background-color: #242424 !important;
+  max-height: 3rem;
+}
+
+.navbar-nav {
+  margin-left: 20%;
 }
 
 .nav-link {
-  font-size: 16px !important;
+  font-size: 18px !important;
+  font-weight: 400;
+  margin-left: 1rem;
+}
+
+.logo-main {
+  width: 100%;
+  padding: 0 !important;
 }
 /*# sourceMappingURL=style.css.map */
