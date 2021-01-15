@@ -26,8 +26,21 @@ html, body {
         min-width: 15rem;
         object-fit: cover;
         position: relative;
-        right: 13%;
-        top: 7.5vw;
+        right: 10.1rem;
+        top: 6rem;
+        animation-delay: 0.5s;
+    }
+
+    .mobilebank2 {
+        max-height: 75vh;
+        width: 55%;
+        min-width: 15rem;
+        object-fit: cover;
+        position: relative;
+        right: 3rem;
+        top: 8.5rem;
+        z-index: 1;
+        animation-delay: 0.309s;
     }
     
     .herotextbox {

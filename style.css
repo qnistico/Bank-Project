@@ -39,8 +39,24 @@ html, body {
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
-  right: 13%;
-  top: 7.5vw;
+  right: 10.1rem;
+  top: 6rem;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.heromain .mobilebank2 {
+  max-height: 75vh;
+  width: 55%;
+  min-width: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  right: 3rem;
+  top: 8.5rem;
+  z-index: 1;
+  -webkit-animation-delay: 0.309s;
+          animation-delay: 0.309s;
 }
 
 .heromain .herotextbox {
