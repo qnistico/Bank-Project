@@ -191,6 +191,12 @@ html, body {
 }
 
 @media screen and (max-width: 576px) {
+    footer {
+        display: none;
+    }
+    .graph1 {
+        padding-top: 20rem;
+    }
     .heroflex {
         flex-flow: column nowrap !important;
         align-items: center;

@@ -272,6 +272,12 @@ html, body {
 }
 
 @media screen and (max-width: 576px) {
+  footer {
+    display: none;
+  }
+  .graph1 {
+    padding-top: 20rem;
+  }
   .heroflex {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
