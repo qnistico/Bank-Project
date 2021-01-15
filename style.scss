@@ -67,18 +67,72 @@ html, body {
         min-width: 25rem;
         text-align: left;
     }
+    h2 {
+        min-width: unset;
+    }
+    .colorgreen {
+        color: #44ca7c;
+    }
     .flexbuttons {
         display: flex;
         width: 100%;
     }
-    .buttons {
-        background-color: #53b17a;
-        color: black;
-        font-weight: 500;
-        border-radius: 5px;
-        padding: 8px 24px 8px 24px;
-        text-shadow: none;
-    }
+    
+    .wrapper
+        
+      
+      
+      a{
+        display: block;
+        width: 150px;
+        line-height: 40px;
+        background: orangered;
+        text-align: center;
+        position: relative;
+        text-decoration: none;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 0 5px 0 5px;
+      }
+      
+      a:before,
+      a:after{
+        position: absolute;
+        content: "";
+        transition: all 0.41s;
+      }
+      
+      a:before{
+        border-bottom: 2px solid white;
+        border-left: 2px solid white;
+        
+        width: 10%;
+        height: 33%;
+        left: -10px;
+        bottom: -10px;
+      }
+      
+      a:after{
+        border-top: 2px solid white;
+        border-right: 2px solid white;
+        width: 10%;
+        height: 33%;
+        top: -10px;
+        right: -10px;
+      }
+      
+      a:hover:before{
+        width: 113%;
+        height: 150%;
+      }
+      
+      a:hover:after{
+        width: 113%;
+        height: 150%;
+      }
     .btn-1:hover,
     .btn-1:active,
     .btn-2:hover,
@@ -221,7 +275,7 @@ html, body {
             text-align: left !important;
             min-width: unset !important;
             position: relative;
-            top: -5vw;
+            top: 5vw;
         }
         h1 {
             font-size: 18vw !important;
@@ -288,4 +342,16 @@ html, body {
 .logo-main {
     width: 100%;
     padding: 0 !important;
+}
+
+.login,
+.signup {
+    border: 1px solid white;
+    padding: 5px;
+    color: #0FFF95 !important;
+}
+
+.nav-flex-icons {
+    display: flex;
+    align-items: center;
 }

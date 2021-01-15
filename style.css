@@ -96,6 +96,14 @@ html, body {
   text-align: left;
 }
 
+.heromain .herotextbox h2 {
+  min-width: unset;
+}
+
+.heromain .herotextbox .colorgreen {
+  color: #44ca7c;
+}
+
 .heromain .herotextbox .flexbuttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,13 +111,57 @@ html, body {
   width: 100%;
 }
 
-.heromain .herotextbox .buttons {
-  background-color: #53b17a;
-  color: black;
-  font-weight: 500;
-  border-radius: 5px;
-  padding: 8px 24px 8px 24px;
-  text-shadow: none;
+.heromain .herotextbox .wrapper
+a {
+  display: block;
+  width: 150px;
+  line-height: 40px;
+  background: orangered;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0 5px 0 5px;
+}
+
+.heromain .herotextbox a:before,
+.heromain .herotextbox a:after {
+  position: absolute;
+  content: "";
+  -webkit-transition: all 0.41s;
+  transition: all 0.41s;
+}
+
+.heromain .herotextbox a:before {
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+  width: 10%;
+  height: 33%;
+  left: -10px;
+  bottom: -10px;
+}
+
+.heromain .herotextbox a:after {
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  width: 10%;
+  height: 33%;
+  top: -10px;
+  right: -10px;
+}
+
+.heromain .herotextbox a:hover:before {
+  width: 113%;
+  height: 150%;
+}
+
+.heromain .herotextbox a:hover:after {
+  width: 113%;
+  height: 150%;
 }
 
 .heromain .herotextbox .btn-1:hover,
@@ -309,7 +361,7 @@ html, body {
     text-align: left !important;
     min-width: unset !important;
     position: relative;
-    top: -5vw;
+    top: 5vw;
   }
   .herotextbox h1 {
     font-size: 18vw !important;
@@ -381,5 +433,21 @@ html, body {
 .logo-main {
   width: 100%;
   padding: 0 !important;
+}
+
+.login,
+.signup {
+  border: 1px solid white;
+  padding: 5px;
+  color: #0FFF95 !important;
+}
+
+.nav-flex-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
