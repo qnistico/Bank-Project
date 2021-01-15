@@ -12,9 +12,11 @@ html, body {
 
 .heromain {
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url(img/hero.jpg);
+    min-height: 135vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(img/girl.jpg);
     background-size: cover;
     background-position: center center;
+    padding: 0 0 180px 0;
     .heroflex {
         display: flex;
         flex-flow: row nowrap;
@@ -73,20 +75,22 @@ html, body {
     .colorgreen {
         color: #44ca7c;
     }
-    .flexbuttons {
-        display: flex;
-        width: 100%;
-    }
     
-    .wrapper
+
+    
+    
+    
+}
+}
+.wrapperooni
         
       
       
-      a{
+      .btn-1{
         display: block;
         width: 150px;
         line-height: 40px;
-        background: orangered;
+        background: #44ca7c;
         text-align: center;
         position: relative;
         text-decoration: none;
@@ -98,54 +102,80 @@ html, body {
         padding: 0 5px 0 5px;
       }
       
-      a:before,
-      a:after{
+      .btn-1:before,
+      .btn-1:after{
         position: absolute;
         content: "";
         transition: all 0.41s;
       }
       
-      a:before{
+      .btn-1:before{
         border-bottom: 2px solid white;
         border-left: 2px solid white;
         
         width: 10%;
         height: 33%;
-        left: -10px;
-        bottom: -10px;
+        left: -7.5px;
+        bottom: -7.5px;
       }
       
-      a:after{
+      .btn-1:after{
         border-top: 2px solid white;
         border-right: 2px solid white;
         width: 10%;
         height: 33%;
-        top: -10px;
-        right: -10px;
+        top: -7.5px;
+        right: -7.5px;
       }
       
-      a:hover:before{
-        width: 113%;
-        height: 150%;
+      .btn-1:hover:before{
+        width: 110%;
+        height: 135%;
       }
       
-      a:hover:after{
-        width: 113%;
-        height: 150%;
+      .btn-1:hover:after{
+        width: 110%;
+        height: 135%;
       }
-    .btn-1:hover,
-    .btn-1:active,
-    .btn-2:hover,
-    .btn-2:active {
-        background-color: rgb(224, 224, 224);
-        transition: all 0.3s ease;
 
+      .btn-2:before,
+      .btn-2::after {
+          border-color: black;
+      }
+    
+.overlay {
+    width: 100%;
+    padding: 5vw;
+    .overlayparent {
+        z-index: 99;
     }
-    .btn-2 {
-        margin-left: 20px;
-    }
+    .overlayflex {
+        display: flex;
+        justify-content: space-evenly;
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.151);
+        align-items: center;
+        width: 85%;
+        margin: -270px 0 0 7.5%;
+        padding: 5vw;
+        background-color: white;
+        .overlayflexcol {
+            display: flex;
+            flex-flow: column nowrap;
+            width: 35%;
+            min-width: 20rem;
+            h2 {
+                font-size: 2.75rem;
+                font-weight: 700;
+            }
+            p {
+                font-weight: 400;
+            }
+            
+        }
     }
 }
+
+
 
 .content1 {
     width: 100%;
@@ -222,6 +252,8 @@ html, body {
         min-width: 25rem;
     }
 }
+
+
 
 .graph1 {
     width: 100%;

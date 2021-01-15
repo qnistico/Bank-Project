@@ -13,10 +13,12 @@ html, body {
 
 .heromain {
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.32)), to(rgba(0, 0, 0, 0.32))), url(img/hero.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url(img/hero.jpg);
+  min-height: 135vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url(img/girl.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(img/girl.jpg);
   background-size: cover;
   background-position: center center;
+  padding: 0 0 180px 0;
 }
 
 .heromain .heroflex {
@@ -104,19 +106,12 @@ html, body {
   color: #44ca7c;
 }
 
-.heromain .herotextbox .flexbuttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-.heromain .herotextbox .wrapper
-a {
+.wrapperooni
+.btn-1 {
   display: block;
   width: 150px;
   line-height: 40px;
-  background: orangered;
+  background: #44ca7c;
   text-align: center;
   position: relative;
   text-decoration: none;
@@ -128,53 +123,93 @@ a {
   padding: 0 5px 0 5px;
 }
 
-.heromain .herotextbox a:before,
-.heromain .herotextbox a:after {
+.btn-1:before,
+.btn-1:after {
   position: absolute;
   content: "";
   -webkit-transition: all 0.41s;
   transition: all 0.41s;
 }
 
-.heromain .herotextbox a:before {
+.btn-1:before {
   border-bottom: 2px solid white;
   border-left: 2px solid white;
   width: 10%;
   height: 33%;
-  left: -10px;
-  bottom: -10px;
+  left: -7.5px;
+  bottom: -7.5px;
 }
 
-.heromain .herotextbox a:after {
+.btn-1:after {
   border-top: 2px solid white;
   border-right: 2px solid white;
   width: 10%;
   height: 33%;
-  top: -10px;
-  right: -10px;
+  top: -7.5px;
+  right: -7.5px;
 }
 
-.heromain .herotextbox a:hover:before {
-  width: 113%;
-  height: 150%;
+.btn-1:hover:before {
+  width: 110%;
+  height: 135%;
 }
 
-.heromain .herotextbox a:hover:after {
-  width: 113%;
-  height: 150%;
+.btn-1:hover:after {
+  width: 110%;
+  height: 135%;
 }
 
-.heromain .herotextbox .btn-1:hover,
-.heromain .herotextbox .btn-1:active,
-.heromain .herotextbox .btn-2:hover,
-.heromain .herotextbox .btn-2:active {
-  background-color: #e0e0e0;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+.btn-2:before,
+.btn-2::after {
+  border-color: black;
 }
 
-.heromain .herotextbox .btn-2 {
-  margin-left: 20px;
+.overlay {
+  width: 100%;
+  padding: 5vw;
+}
+
+.overlay .overlayparent {
+  z-index: 99;
+}
+
+.overlay .overlayflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.151);
+          box-shadow: 0 0 32px rgba(0, 0, 0, 0.151);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 85%;
+  margin: -270px 0 0 7.5%;
+  padding: 5vw;
+  background-color: white;
+}
+
+.overlay .overlayflex .overlayflexcol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 35%;
+  min-width: 20rem;
+}
+
+.overlay .overlayflex .overlayflexcol h2 {
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+
+.overlay .overlayflex .overlayflexcol p {
+  font-weight: 400;
 }
 
 .content1 {
