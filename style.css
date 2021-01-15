@@ -89,6 +89,7 @@ html, body {
 }
 
 .heromain .herotextbox p {
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -472,9 +473,9 @@ html, body {
 
 .login,
 .signup {
-  border: 1px solid white;
+  background-color: #44ca7c;
+  color: white;
   padding: 5px;
-  color: #0FFF95 !important;
 }
 
 .nav-flex-icons {
