@@ -444,13 +444,6 @@ html, body {
 }
 
 @media screen and (max-width: 576px) {
-  footer {
-    display: none;
-  }
-  .graph1 {
-    padding-top: 20rem;
-    padding-bottom: 20rem;
-  }
   .heroflex {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
@@ -473,7 +466,8 @@ html, body {
   .herotextbox h2 {
     font-size: 11vw !important;
   }
-  .mobilebank {
+  .mobilebank,
+  .mobilebank2 {
     display: none;
   }
   .content2flex {
@@ -493,6 +487,10 @@ html, body {
   }
   .creditcard {
     min-width: unset !important;
+    width: 100% !important;
+    position: relative;
+    left: -5%;
+    top: 2.5rem;
   }
   .content1 {
     padding: 3rem 0 0 0;
@@ -516,6 +514,56 @@ html, body {
   }
   .content1flex p {
     font-weight: 500 !important;
+  }
+  .overlayflex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: -150px 0 0 5% !important;
+  }
+  .overlayflex .overlayflexcol {
+    min-width: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .overlayflex .overlayflexcol h2 {
+    font-size: 24px !important;
+    width: 50%;
+  }
+  .overlayflex .overlayflexcol p {
+    font-size: 16px;
+    width: 50%;
+  }
+  .overlayimg {
+    width: 100%;
+  }
+  .content3
+.overlaywords {
+    top: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65)));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+    width: 100%;
+    padding: 20px;
+  }
+  .content3
+.overlaywords h2 {
+    font-size: 24px;
+    width: 100%;
+  }
+  .content3
+.overlaywords p {
+    font-size: 16px;
+    width: 100%;
   }
 }
 

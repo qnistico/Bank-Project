@@ -343,11 +343,9 @@ html, body {
 
 @media screen and (max-width: 576px) {
     footer {
-        display: none;
     }
     .graph1 {
-        padding-top: 20rem;
-        padding-bottom: 20rem;
+        
     }
     .heroflex {
         flex-flow: column nowrap !important;
@@ -368,7 +366,8 @@ html, body {
             font-size: 11vw !important;
         }
     }
-.mobilebank {
+.mobilebank,
+.mobilebank2 {
     display: none;
 }
 .content2flex {
@@ -385,6 +384,10 @@ html, body {
 
 .creditcard {
     min-width: unset !important;
+    width: 100% !important;
+    position: relative;
+    left: -5%;
+    top: 2.5rem;
 }
     .content1 {
         padding: 3rem 0 0 0;
@@ -403,6 +406,51 @@ html, body {
         p {
             font-weight: 500 !important;
         }
+    }
+
+    .overlayflex {
+        flex-flow: column nowrap;
+        align-items: center;
+        margin: -150px 0 0 5% !important;
+        .overlayflexcol {
+            min-width: unset;
+            flex-flow: column nowrap;
+            align-items: center;
+            h2 {
+                font-size: 24px !important;
+                width: 50%;
+            }
+            p {
+                font-size: 16px;
+                width: 50%;
+            }
+        }
+    }
+    .overlayimg {
+        width: 100%;
+    }
+
+    .content3
+    .overlaywords {
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+        width: 100%;
+        padding: 20px;
+    
+        h2 {
+            font-size: 24px;
+            width: 100%;
+        }
+        p {
+            font-size: 16px;
+            width: 100%;
+        }
+        
+    }
+
+    .gradient1 img {
+        
     }
 }
 
