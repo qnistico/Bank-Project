@@ -193,7 +193,7 @@ html, body {
         flex-flow: row nowrap;
         justify-content: space-evenly;
         .flexchild {
-            width: 12rem;
+            width: 20%;
         }
         h3 {
             font-size: 24px;
@@ -341,7 +341,23 @@ html, body {
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 290px) {
+    .logo {
+        width: 100%;
+    }
+    .navbar-toggler-icon {
+        position: relative;
+        
+    }
+    nav ul {
+        background-color: black !important;
+    }
+    .nav-item {
+        margin-left: 0 !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
     footer {
     }
     .graph1 {
@@ -364,6 +380,9 @@ html, body {
         }
         h2 {
             font-size: 11vw !important;
+        }
+        .btn-1 {
+            margin-top: 2rem;
         }
     }
 .mobilebank,
@@ -412,6 +431,9 @@ html, body {
         flex-flow: column nowrap;
         align-items: center;
         margin: -150px 0 0 5% !important;
+        .overlayimg {
+            margin-top: 1rem;
+        }
         .overlayflexcol {
             min-width: unset;
             flex-flow: column nowrap;
@@ -425,12 +447,15 @@ html, body {
                 width: 50%;
             }
         }
+        .overlayimg {
+            width: 100%;
+        }
     }
-    .overlayimg {
-        width: 100%;
-    }
+    
 
-    .content3
+    .content3flex {
+
+    
     .overlaywords {
         top: 0;
         left: 0;
@@ -450,7 +475,31 @@ html, body {
     }
 
     .gradient1 img {
-        
+    }
+}
+.navbar {
+    max-height: unset !important;
+    .nav-link {
+        margin: 0;
+    }
+    .navbar-nav {
+        margin: 0;
+    }
+    .signup {
+        margin-left: 12px;
+    }
+}
+}
+
+@media screen and (max-width: 768px) and (min-width: 577px) {
+    .content1flex {
+        flex-flow: row wrap !important;
+        .flexchild {
+            padding: 1.5rem;
+        }
+    }
+    .content1flex>div {
+        flex: 0 50% !important;
     }
 }
 
@@ -486,4 +535,16 @@ html, body {
 .nav-flex-icons {
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+    .content1flex {
+        flex-flow: row wrap !important;
+        .flexchild {
+            padding: 1.5rem;
+        }
+    }
+    .content1flex>div {
+        flex: 0 50% !important;
+    }
 }

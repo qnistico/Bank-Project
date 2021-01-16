@@ -236,7 +236,7 @@ html, body {
 }
 
 .content1 .content1flex .flexchild {
-  width: 12rem;
+  width: 20%;
 }
 
 .content1 .content1flex h3 {
@@ -443,7 +443,22 @@ html, body {
   z-index: -1;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 290px) {
+  .logo {
+    width: 100%;
+  }
+  .navbar-toggler-icon {
+    position: relative;
+  }
+  nav ul {
+    background-color: black !important;
+  }
+  .nav-item {
+    margin-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .heroflex {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
@@ -465,6 +480,9 @@ html, body {
   }
   .herotextbox h2 {
     font-size: 11vw !important;
+  }
+  .herotextbox .btn-1 {
+    margin-top: 2rem;
   }
   .mobilebank,
   .mobilebank2 {
@@ -525,6 +543,9 @@ html, body {
             align-items: center;
     margin: -150px 0 0 5% !important;
   }
+  .overlayflex .overlayimg {
+    margin-top: 1rem;
+  }
   .overlayflex .overlayflexcol {
     min-width: unset;
     -webkit-box-orient: vertical;
@@ -543,11 +564,10 @@ html, body {
     font-size: 16px;
     width: 50%;
   }
-  .overlayimg {
+  .overlayflex .overlayimg {
     width: 100%;
   }
-  .content3
-.overlaywords {
+  .content3flex .overlaywords {
     top: 0;
     left: 0;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65)));
@@ -555,15 +575,42 @@ html, body {
     width: 100%;
     padding: 20px;
   }
-  .content3
-.overlaywords h2 {
+  .content3flex .overlaywords h2 {
     font-size: 24px;
     width: 100%;
   }
-  .content3
-.overlaywords p {
+  .content3flex .overlaywords p {
     font-size: 16px;
     width: 100%;
+  }
+  .navbar {
+    max-height: unset !important;
+  }
+  .navbar .nav-link {
+    margin: 0;
+  }
+  .navbar .navbar-nav {
+    margin: 0;
+  }
+  .navbar .signup {
+    margin-left: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 577px) {
+  .content1flex {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-flow: row wrap !important;
+            flex-flow: row wrap !important;
+  }
+  .content1flex .flexchild {
+    padding: 1.5rem;
+  }
+  .content1flex > div {
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 50% !important;
+            flex: 0 50% !important;
   }
 }
 
@@ -601,5 +648,22 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+  .content1flex {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-flow: row wrap !important;
+            flex-flow: row wrap !important;
+  }
+  .content1flex .flexchild {
+    padding: 1.5rem;
+  }
+  .content1flex > div {
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 50% !important;
+            flex: 0 50% !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
