@@ -34,6 +34,10 @@ html, body {
           justify-content: center;
 }
 
+.heromain span {
+  color: #44ca7c;
+}
+
 .heromain .mobilebank {
   max-height: 75vh;
   width: 55%;
@@ -128,8 +132,8 @@ html, body {
 .btn-1:after {
   position: absolute;
   content: "";
-  -webkit-transition: all 0.41s;
-  transition: all 0.41s;
+  -webkit-transition: all 0.381s;
+  transition: all 0.381s;
 }
 
 .btn-1:before {
@@ -186,8 +190,8 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 85%;
-  margin: -270px 0 0 7.5%;
+  width: 90%;
+  margin: -270px 0 0 5%;
   padding: 5vw;
   background-color: white;
 }
@@ -373,6 +377,70 @@ html, body {
 
 .graph1 .bggray {
   background-color: #e0e0e0;
+}
+
+.content3 {
+  width: 100%;
+  padding: 5vw;
+}
+
+.content3 h2 {
+  font-size: 41px;
+  font-weight: 700;
+}
+
+.content3 p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.content3 .content3flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: 90vh;
+}
+
+.content3 .overlaywords {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 32%;
+  position: relative;
+  color: white;
+  padding: 5px;
+  top: -485px;
+  left: 20%;
+}
+
+.content3 .overlaywords span {
+  color: #44ca7c;
+}
+
+.content3 .gradient1 {
+  width: 90%;
+  background: -webkit-gradient(linear, right top, left top, from(black), to(rgba(0, 0, 0, 0.315)));
+  background: linear-gradient(to left, black, rgba(0, 0, 0, 0.315));
+}
+
+.content3 img {
+  width: 100%;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  max-height: 90vh;
+  position: relative;
+  z-index: -1;
 }
 
 @media screen and (max-width: 576px) {
