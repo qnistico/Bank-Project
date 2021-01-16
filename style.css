@@ -5,7 +5,8 @@
           box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-size: 20px;
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
@@ -97,7 +98,9 @@ html, body {
   font-weight: 400;
 }
 
-.heromain .herotextbox h1, .heromain .herotextbox h2, .heromain .herotextbox p {
+.heromain .herotextbox h1,
+.heromain .herotextbox h2,
+.heromain .herotextbox p {
   width: 65%;
   min-width: 25rem;
   text-align: left;
@@ -111,8 +114,7 @@ html, body {
   color: #44ca7c;
 }
 
-.wrapperooni
-.btn-1 {
+.wrapperooni .btn-1 {
   display: block;
   width: 150px;
   line-height: 40px;
@@ -125,7 +127,8 @@ html, body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding: 0 5px 0 5px;
+  padding: 5px;
+  text-shadow: none;
 }
 
 .btn-1:before,
@@ -156,12 +159,12 @@ html, body {
 
 .btn-1:hover:before {
   width: 110%;
-  height: 135%;
+  height: 130%;
 }
 
 .btn-1:hover:after {
   width: 110%;
-  height: 135%;
+  height: 130%;
 }
 
 .btn-2:before,
@@ -443,6 +446,18 @@ html, body {
   z-index: -1;
 }
 
+footer h5 {
+  font-size: 24px !important;
+}
+
+footer ul li a {
+  font-size: 16px !important;
+}
+
+footer p {
+  font-size: 16px !important;
+}
+
 @media screen and (max-width: 290px) {
   .logo {
     width: 100%;
@@ -468,7 +483,9 @@ html, body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .herotextbox h1, .herotextbox h2, .herotextbox p {
+  .herotextbox h1,
+  .herotextbox h2,
+  .herotextbox p {
     width: 100% !important;
     text-align: left !important;
     min-width: unset !important;
@@ -665,5 +682,10 @@ html, body {
         -ms-flex: 0 50% !important;
             flex: 0 50% !important;
   }
+}
+
+.heropages {
+  background-size: cover;
+  min-height: 65vh;
 }
 /*# sourceMappingURL=style.css.map */
