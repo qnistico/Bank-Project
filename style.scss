@@ -206,7 +206,6 @@ body {
 
   .content1flex {
     display: flex;
-    flex-flow: row nowrap;
     justify-content: space-evenly;
 
     .flexchild {
@@ -256,7 +255,7 @@ body {
 
   .content2description {
     width: 45%;
-    background-color: rgb(206, 236, 215);
+    background-color: rgb(236, 236, 236);
     padding: 20px;
   }
 
@@ -269,7 +268,6 @@ body {
     font-size: 16px;
     font-weight: 400;
     list-style: none;
-    border-bottom: 1px solid black;
     width: 25%;
   }
 
@@ -330,7 +328,7 @@ body {
   }
 
   .bggray {
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(238, 237, 237);
   }
 }
 
@@ -434,10 +432,12 @@ footer {
       min-width: unset !important;
       position: relative;
       top: 5vw;
+      padding-top: 1rem;
     }
 
     h1 {
       font-size: 18vw !important;
+      padding-top: 4.1rem;
     }
 
     h2 {
@@ -613,7 +613,24 @@ footer {
   background-color: #44ca7c;
   color: white;
   padding: 5px;
+  border: 2px solid #44ca7c;
 }
+
+.login {
+    background-color: transparent;
+}
+
+.login:hover {
+    background-color: #44ca7c;
+    color: white !important;
+}
+
+.signup:hover {
+    background-color: transparent;
+    color: white !important;
+}
+
+
 
 
 

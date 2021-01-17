@@ -229,10 +229,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -292,7 +288,7 @@ body {
 
 .content2 .content2description {
   width: 45%;
-  background-color: #ceecd7;
+  background-color: #ececec;
   padding: 20px;
 }
 
@@ -305,7 +301,6 @@ body {
   font-size: 16px;
   font-weight: 400;
   list-style: none;
-  border-bottom: 1px solid black;
   width: 25%;
 }
 
@@ -379,7 +374,7 @@ body {
 }
 
 .graph1 .bggray {
-  background-color: #e0e0e0;
+  background-color: #eeeded;
 }
 
 .content3 {
@@ -491,9 +486,11 @@ footer p {
     min-width: unset !important;
     position: relative;
     top: 5vw;
+    padding-top: 1rem;
   }
   .herotextbox h1 {
     font-size: 18vw !important;
+    padding-top: 4.1rem;
   }
   .herotextbox h2 {
     font-size: 11vw !important;
@@ -656,6 +653,21 @@ footer p {
   background-color: #44ca7c;
   color: white;
   padding: 5px;
+  border: 2px solid #44ca7c;
+}
+
+.login {
+  background-color: transparent;
+}
+
+.login:hover {
+  background-color: #44ca7c;
+  color: white !important;
+}
+
+.signup:hover {
+  background-color: transparent;
+  color: white !important;
 }
 
 .nav-flex-icons {
